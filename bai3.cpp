@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <math.h>
 
-int main()
-{
-    int a,b,sum;
-printf("input first interger ");
-scanf("%i",&a);
-printf("input second interger ");
-scanf("%i",&b);
-sum = a + b;
-printf("\nsum of above intergers = %i", a,b,sum);
+int main() {
+    float ketqua,x,y;
+    
+    scanf(" %f%f",&x,&y);
+    
+    ketqua = (sqrt(1+pow(x,2)+pow(y,2)))/(3+(x+y)*(x+y));
+    
+    printf("%.4f",ketqua);
+    
+    return 0;
 }

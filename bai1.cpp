@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-int main()
-{
-printf("Name: Le Thanh Tung\n");
-printf("DOB: October, 28, 2005\n");
-printf("Phone: 0336219107");
-}
+int main() {
+    int n ,tong,du;
+    
+    printf("Nhap n = ");
+    scanf("%d",&n);
+    du = n%100;
+    tong = n/100 + du/10 +du%10;
+    printf("Tong= %d",tong);
+} 

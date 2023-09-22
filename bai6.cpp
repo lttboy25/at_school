@@ -1,19 +1,19 @@
 #include <stdio.h>
-int main()
-{
-    int day_int,year,a,week,day;
-    printf("input day = ");
-    scanf("%i",&day_int);
+#include <math.h>
 
-    year = day_int/365;
-    printf("Year %i",year);
-
-    a = day_int %365;
+int main() {
     
-    week = a/7;
-    printf("\nWeek %i",week);
-
-    day = a%7;
-    printf("\nDay %i",day);
+    float a,b,c,p,dientich,chuvi;
     
+    printf("Nhap 3 canh  ");
+    scanf("%f%f%f",&a,&b,&c);
+    
+    p = (a+b+c)/2;
+    
+    dientich = sqrt(p*(p-a)*(P-b)*(p-c));
+    chuvi =  (a+b+c);
+    printf("dien tich = %f",dientich);
+    printf("chu vi = %f",chuvi);
+    
+    return 0;
 }

@@ -1,14 +1,17 @@
 #include <stdio.h>
-int main()
-{
-    float height,weight,BMI;
-    printf("input height (m): ");
-    scanf("%f",&height);
+#include <math.h>
 
-    printf("input weight (Kg): ");
-    scanf("%2f",&weight);
-    height = height/100;
-
-    BMI = weight/(height*height);
-    printf("BMI = %2f",BMI);
+int main() {
+    
+    float x,y,huyen,dientich;
+    
+    printf("Nhap 2 canh goc vuong ");
+    scanf("%f%f",&x,&y);
+    
+    huyen = sqrt(pow(x,2)+pow(y,2));
+    dientich = (x*y)/2;
+    printf("canh huyen = %f\n",huyen);
+    printf("dien tich = %f",dientich);
+    
+    return 0;
 }
