@@ -1,9 +1,14 @@
 #include <stdio.h>
-int main()
-{
-printf("  ######\n");
-printf("##      ##\n");
-printf("#\n#\n#\n#\n");
-printf("##      ##\n");
-printf("  ######");
+#include <math.h>
+
+int main() {
+    float ketqua;
+    float x;
+    scanf(" %f",&x);
+    
+    ketqua = (pow(x,2)/(1+(pow(x,2)/(1+(pow(x,2)/(1+(pow(x,2))))))));
+    
+    printf("%.4f",ketqua);
+    
+    return 0;
 }

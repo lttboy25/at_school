@@ -1,14 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
-int main()
-{
-    float n,c,s;
-    printf("nhap ban kinh ");
-    scanf("%f",&n);
-
-    c = n*2*3.14;
-    s = 3.14*n*n;
-    printf("Chu vi hinh tron voi ban kinh %3f la %1f",n,c);
-    printf("\nDien tich hinh tron voi ban kinh %3f la %1f",n,s);
-
+int main() {
+    float distance,x1,y1,x2,y2;
+    
+    printf("Nhap diem x1 y1 x2 y2\n");
+    scanf(" %f%f%f%f",&x1,&y1,&x2,&y2);
+  
+   
+    
+    distance = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+    
+    
+    printf("Distance between the said points: %.4f",distance);
+    
+    return 0;
 }
