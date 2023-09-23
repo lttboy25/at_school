@@ -6,9 +6,9 @@ int main()
     scanf("%f",&height);
 
     printf("input weight (Kg): ");
-    scanf("%2f",&weight);
+    scanf("%.2f",&weight);
     height = height/100;
 
     BMI = weight/(height*height);
-    printf("BMI = %2f",BMI);
+    printf("BMI = %.2f",BMI);
 }
