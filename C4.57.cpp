@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 int main()
 {
 	int n,chuc,tram,donvi,sok;
@@ -8,45 +8,53 @@ int main()
 	chuc = n%100/10;
 	donvi = n %100%10;
 	
-	if(tram>chuc&&tram>donvi)
+	//tram min
+	if(tram<chuc&&tram<donvi)
 		{
-		if (chuc>donvi)
+			//tram<chuc<donvi
+		if (chuc<donvi)
 			{
 				sok = tram*100+chuc*10+donvi;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
+			//tram<donvi<chuc
 		else
 			{
 				sok = tram*100+donvi*10+chuc;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
 		
 		}
-	else if(chuc>tram&&chuc>donvi)
+		//chuc min
+	else if(chuc<tram&&chuc<donvi)
+			//chuc<tram<donvi
 		{
-		if (tram>donvi)
+		if (tram<donvi)
 			{
 				sok = chuc*100+tram*10+donvi;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
+			//chuc<donvi<tram
 		else
 			{
 				sok = chuc*100+donvi*10+tram;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
 	}
-	
+		//donvi min
 	else 
 		{
-		if (chuc>tram)
+			//donvi<chuc<tram
+		if (chuc<tram)
 			{
 				sok = donvi*100+chuc*10+tram;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
+			//donvi<tram<chuc
 		else
 			{
 				sok = donvi*100+tram*10+chuc;
-				printf("so luc sau = ",sok);
+				printf("so luc sau = %d",sok);
 			}
 		}
 }
