@@ -4,7 +4,7 @@ int main() {
     double a,b,c;
     printf("Vui long nhap 3 canh cua tam giac ");
     scanf("%lf%lf%lf",&a,&b,&c);
-    if ((a+b>c) || (a+c>b) || (b+c>a)) {
+    if ((a+b>c) && (a+c>b) && (b+c>a)) {
         if (a==b==c) {
             printf("tam giac deu");
         }
