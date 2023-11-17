@@ -176,9 +176,9 @@ void SapTang(int a[],int n) {
 
 
 int main() {
-	int a[max], n=5, x;
+	int a[max], n, x;
 	printf("Nhap kich thuoc mang: ");
-	
+	scanf("%d",&n);
 	nhapmang(a,n);
 	printf("\nGia tri cua mang da nhap la:\n");
 	xuatmang(a,n);
