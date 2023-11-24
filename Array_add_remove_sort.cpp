@@ -116,13 +116,13 @@ int timmax(int a[], int n) {
 }
 
 void sapxep(int a[], int n) {
-    int tg;
+    int tam;
     for (int i = 0; i<n-1; i++) {
     	for (int j = i+1; j<n; j++) {
     		if (a[i] > a[j]) {
-    			tg = a[i];
+    			tam = a[i];
     			a[i] = a[j];
-    			a[j] = tg;
+    			a[j] = tam;
 			}
 		}
 	}
