@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "i:/Code/in-school_C,c++/at_school",
-      "program": "i:/Code/in-school_C,c++/at_school/build/Debug/outDebug",
+      "cwd": "e:/Code/at_school",
+      "program": "e:/Code/at_school/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
